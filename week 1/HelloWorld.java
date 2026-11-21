@@ -1,4 +1,4 @@
-
+//java
 // This is a single-line comment. The compiler ignores it.
 
 // It is used to explain what the code does.

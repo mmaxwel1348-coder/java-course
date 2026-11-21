@@ -1,3 +1,4 @@
+//java
 // Procedural approach: data and methods are separate.
 public class RectangleProcedural {
 

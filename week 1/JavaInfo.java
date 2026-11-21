@@ -1,3 +1,4 @@
+//java
 // This program prints information about the Java runtime.
 public class JavaInfo {
 public static void main(String[] args) {
