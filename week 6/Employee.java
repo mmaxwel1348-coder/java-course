@@ -1,6 +1,6 @@
 // This class demonstrates constructor chaining and the 'this' keyword.
 
-public class ChainedEmployee {
+public class Employee {
 
 // Private fields
 private int id;
@@ -11,7 +11,7 @@ private String department;
 // ============================================================
 // CONSTRUCTOR 1: Master Constructor (Takes all arguments)
 // ============================================================
-public ChainedEmployee(int id, String name, double salary, String department) {
+public Employee(int id, String name, double salary, String department) {
 // 'this' distinguishes the instance variable from the parameter.
 // Without 'this', id = id would assign the parameter to itself!
 this.id = id;
@@ -23,7 +23,7 @@ this.department = department;
 // ============================================================
 // CONSTRUCTOR 2: Overloaded (No department specified)
 // ============================================================
-public ChainedEmployee(int id, String name, double salary) {
+public Employee(int id, String name, double salary) {
 // CONSTRUCTOR CHAINING: this() calls another constructor.
 // It MUST be the first line in the constructor.
 // Here, we call Constructor 1 and provide a default department.
@@ -33,7 +33,7 @@ this(id, name, salary, "Unassigned");
 // ============================================================
 // CONSTRUCTOR 3: Overloaded (Only id and name)
 // ============================================================
-public ChainedEmployee(int id, String name) {
+public Employee(int id, String name) {
 
 // Chain to Constructor 2, providing a default salary.
 // Constructor 2 will then chain to Constructor 1.
